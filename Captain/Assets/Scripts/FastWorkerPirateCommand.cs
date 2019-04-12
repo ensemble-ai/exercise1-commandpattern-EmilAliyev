@@ -23,10 +23,7 @@ namespace Captain.Command
             workSinceProduction = 0;
 
             //Total duration: 10-20s (picked randomly)
-            //Get a Random.value, multiply by the difference between max and min duration to get the range,
-            //add the min duration to get the value (so if Random.value returns 0, totalWorkDuration = min, if
-            //1, totalWorkDuration = max)
-            totalWorkDuration = Random.value * (MAX_WORK_DURATION - MIN_WORK_DURATION) + MIN_WORK_DURATION;
+            totalWorkDuration = MIN_WORK_DURATION;
 
         }
 
@@ -62,7 +59,8 @@ namespace Captain.Command
             workSinceProduction += Time.deltaTime;
 
             produceItem(pirate, productPrefab);
-            return workDone();
+            
+            return !workDone();
 
         }
     }
