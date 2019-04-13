@@ -45,7 +45,5 @@ public class PirateController : MonoBehaviour
         {
             this.ActiveCommand = Object.Instantiate(ScriptableObject.CreateInstance<FastWorkerPirateCommand>());
         }
-
-        this.ActiveCommand = Object.Instantiate(ScriptableObject.CreateInstance<NoWorkPirateCommand>());
     }
 }

@@ -49,7 +49,7 @@ namespace Captain.Command
                 workSinceProduction = 0;
 
                 //Create item
-                var item = (GameObject)Instantiate(itemPrefab, pirate.transform);
+                var item = (GameObject)Instantiate(itemPrefab, pirate.transform.localPosition, Quaternion.identity);
             }
         }
 
