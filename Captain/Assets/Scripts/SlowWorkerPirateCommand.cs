@@ -19,9 +19,6 @@ namespace Captain.Command
             minWorkDuration = MIN_WORK_DURATION;
             maxWorkDuration = MAX_WORK_DURATION;
 
-            //Total duration: 20-40s (picked randomly)
-            totalWorkDuration = MIN_WORK_DURATION;
-
         }
 
     }

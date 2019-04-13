@@ -19,6 +19,12 @@ public class WorkPirateCommand : ScriptableObject
         workSinceProduction = 0;
     }
 
+    protected void OnEnable()
+    {
+        //Randomly set total work duration according to min and max
+        totalWorkDuration = Random.Range(minWorkDuration, maxWorkDuration);
+    }
+
     //Check if work is done
     protected bool workDone()
     {
