@@ -17,6 +17,8 @@ public class WorkPirateCommand : ScriptableObject
         //Initialize variables
         totalWorkDone = 0;
         workSinceProduction = 0;
+
+        exhausted = false;
     }
 
     protected void OnEnable()
@@ -52,13 +54,24 @@ public class WorkPirateCommand : ScriptableObject
     //Work for duration and create item according to production interval
     public bool Execute(GameObject pirate, Object productPrefab)
     {
-        produceItem(pirate, productPrefab);
+        //If not exhausted
+        if (!exhausted)
+        {
+            produceItem(pirate, productPrefab);
 
-        //Add time since last frame to work done
-        totalWorkDone += Time.deltaTime;
-        workSinceProduction += Time.deltaTime;
+            //Add time since last frame to work done
+            totalWorkDone += Time.deltaTime;
+            workSinceProduction += Time.deltaTime;
 
-        return !workDone();
+            workDone();
+
+            return true;
+        }
+
+        else
+        {
+            return false;
+        }
 
     }
 }
