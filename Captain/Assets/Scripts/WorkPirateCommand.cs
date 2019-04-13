@@ -29,4 +29,17 @@ public class WorkPirateCommand : ScriptableObject
         }
         return false;
     }
+
+    //Produce item if interval is up
+    protected void produceItem(GameObject pirate, Object itemPrefab)
+    {
+        //If interval is up
+        if (workSinceProduction >= productionTime)
+        {
+            workSinceProduction = 0;
+
+            //Create item
+            ItemCreator.produceItem(pirate, itemPrefab);
+        }
+    }
 }

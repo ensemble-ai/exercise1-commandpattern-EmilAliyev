@@ -24,18 +24,6 @@ namespace Captain.Command
 
         }
 
-        //Produce item if interval is up
-        public void produceItem(GameObject pirate, Object itemPrefab)
-        {
-            //If interval is up
-            if (workSinceProduction >= PRODUCTION_TIME)
-            {
-                workSinceProduction = 0;
-
-                ItemCreator.produceItem(pirate, itemPrefab);
-            }
-        }
-
         //Work for 5-10s and produce 1 item every 2s. 
         public bool Execute(GameObject pirate, Object productPrefab)
         {
