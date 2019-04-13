@@ -42,4 +42,17 @@ public class WorkPirateCommand : ScriptableObject
             ItemCreator.produceItem(pirate, itemPrefab);
         }
     }
+
+    //Work for duration and create item according to production interval
+    public bool Execute(GameObject pirate, Object productPrefab)
+    {
+        produceItem(pirate, productPrefab);
+
+        //Add time since last frame to work done
+        totalWorkDone += Time.deltaTime;
+        workSinceProduction += Time.deltaTime;
+
+        return !workDone();
+
+    }
 }

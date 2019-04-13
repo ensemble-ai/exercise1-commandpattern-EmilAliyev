@@ -24,18 +24,6 @@ namespace Captain.Command
 
         }
 
-        //Work for 10-20s and produce 1 item every 4s. 
-        public bool Execute(GameObject pirate, Object productPrefab)
-        {
-            //Add time since last frame to work done
-            totalWorkDone += Time.deltaTime;
-            workSinceProduction += Time.deltaTime;
-
-            produceItem(pirate, productPrefab);
-            
-            return !workDone();
-
-        }
     }
 
 }
