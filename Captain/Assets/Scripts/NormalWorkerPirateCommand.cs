@@ -14,9 +14,6 @@ namespace Captain.Command
 
         public NormalWorkerPirateCommand()
         {
-            //Initialize variables
-            totalWorkDone = 0;
-            workSinceProduction = 0;
 
             productionTime = PRODUCTION_TIME;
             minWorkDuration = MIN_WORK_DURATION;
@@ -25,19 +22,6 @@ namespace Captain.Command
             //Total duration: 20-40s (picked randomly)
             totalWorkDuration = MIN_WORK_DURATION;
 
-        }
-
-
-
-        //Check if work is done
-        private bool workDone()
-        {
-            if (totalWorkDone >= totalWorkDuration)
-            {
-                exhausted = true;
-                return true;
-            }
-            return false;
         }
 
         //Produce item if interval is up

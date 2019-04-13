@@ -11,4 +11,22 @@ public class WorkPirateCommand : ScriptableObject
     protected float minWorkDuration; //Minimum work duration
     protected float maxWorkDuration; //Maximum work duration
     protected bool exhausted = false;
+
+    protected WorkPirateCommand()
+    {
+        //Initialize variables
+        totalWorkDone = 0;
+        workSinceProduction = 0;
+    }
+
+    //Check if work is done
+    protected bool workDone()
+    {
+        if (totalWorkDone >= totalWorkDuration)
+        {
+            exhausted = true;
+            return true;
+        }
+        return false;
+    }
 }
