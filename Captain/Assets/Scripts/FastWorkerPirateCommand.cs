@@ -6,7 +6,7 @@ using Captain.Command;
 
 namespace Captain.Command
 {
-    public class FastWorkerPirateCommand : ScriptableObject, IPirateCommand
+    public class FastWorkerPirateCommand : WorkPirateCommand, IPirateCommand
     {
         private float totalWorkDuration; //Duration to work
         private float totalWorkDone; //Total amount of work done
