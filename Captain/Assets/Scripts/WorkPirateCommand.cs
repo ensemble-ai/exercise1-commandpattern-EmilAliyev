@@ -4,5 +4,11 @@ using UnityEngine;
 
 public class WorkPirateCommand : ScriptableObject
 {
-    
+    protected float totalWorkDuration; //Duration to work
+    protected float totalWorkDone; //Total amount of work done
+    protected float workSinceProduction; //Work done since last time an item was produced
+    protected float productionTime; //Interval in which items are produced
+    protected float minWorkDuration; //Minimum work duration
+    protected float maxWorkDuration; //Maximum work duration
+    protected bool exhausted = false;
 }

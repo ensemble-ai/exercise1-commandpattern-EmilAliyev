@@ -6,21 +6,21 @@ using Captain.Command;
 
 namespace Captain.Command
 {
-    public class SlowWorkerPirateCommand : ScriptableObject, IPirateCommand
+    public class SlowWorkerPirateCommand : WorkPirateCommand, IPirateCommand
     {
-        private float totalWorkDuration; //Duration to work
-        private float totalWorkDone; //Total amount of work done
-        private float workSinceProduction; //Work done since last time an item was produced
         private const float PRODUCTION_TIME = 8.0f; //Interval in which items are produced
         private const float MIN_WORK_DURATION = 20.0f; //Minimum work duration
         private const float MAX_WORK_DURATION = 40.0f; //Maximum work duration
-        private bool exhausted = false;
 
         public SlowWorkerPirateCommand()
         {
             //Initialize variables
             totalWorkDone = 0;
             workSinceProduction = 0;
+
+            productionTime = PRODUCTION_TIME;
+            minWorkDuration = MIN_WORK_DURATION;
+            maxWorkDuration = MAX_WORK_DURATION;
 
             //Total duration: 20-40s (picked randomly)
             totalWorkDuration = MIN_WORK_DURATION;
