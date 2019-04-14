@@ -11,10 +11,16 @@ namespace Captain.Command
     {
         public void Execute(GameObject gameObject)
         {
-            //Jump
+            //Get rigid body
             var rigidBody = gameObject.GetComponent<Rigidbody2D>();
 
-            rigidBody.velocity = new Vector2(0, 10);
+            //Check y velocity to see if already in air. If not, jump
+            float yvel = rigidBody.velocity[1];
+
+            if (yvel == 0)
+            {
+                rigidBody.velocity = new Vector2(0, 10);
+            }
         }
     }
 }
