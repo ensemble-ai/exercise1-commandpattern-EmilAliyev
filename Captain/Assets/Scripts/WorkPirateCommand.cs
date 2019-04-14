@@ -7,6 +7,8 @@ namespace Captain.Command
 
     public class WorkPirateCommand : ScriptableObject, IPirateCommand
     {
+        // The "master" work command. Slow, normal and fast work commands derive from this. 
+
         protected float totalWorkDuration; //Duration to work
         protected float totalWorkDone; //Total amount of work done
         protected float workSinceProduction; //Work done since last time an item was produced
