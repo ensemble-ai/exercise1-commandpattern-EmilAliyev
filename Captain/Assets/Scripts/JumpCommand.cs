@@ -5,7 +5,9 @@ using UnityEngine;
 
 namespace Captain.Command
 {
-    public class CaptainCommand : ScriptableObject, ICaptainCommand
+    //This command causes the captain to jump. 
+
+    public class JumpCommand : ScriptableObject, ICaptainCommand
     {
         public void Execute(GameObject gameObject)
         {
