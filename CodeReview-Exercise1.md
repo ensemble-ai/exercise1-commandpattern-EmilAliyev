@@ -112,3 +112,9 @@ This should be similar to the Code Style justification.
 ### Best Practice observations ###
 
 #### Put best practice observations here ####
+
+* [Private Fields](https://github.com/ensemble-ai/exercise1-commandpattern-EmilAliyev/blob/27c5733b86e0fbb3105c00d1d35ade02b1f9b668/Captain/Assets/Scripts/PirateController.cs#L11) - Proper use of private fields as opposed to public fields.
+
+* [Curly Braces](https://github.com/ensemble-ai/exercise1-commandpattern-EmilAliyev/blob/27c5733b86e0fbb3105c00d1d35ade02b1f9b668/Captain/Assets/Scripts/PirateController.cs#L36) - Proper positioning of curly braces in conditional statement.
+
+* [Use of Var](https://github.com/ensemble-ai/exercise1-commandpattern-EmilAliyev/blob/27c5733b86e0fbb3105c00d1d35ade02b1f9b668/Captain/Assets/Scripts/MoveCharacterRight.cs#L14) - Proper use of "var", since the context makes the type of the variable clear.
