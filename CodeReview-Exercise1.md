@@ -60,7 +60,7 @@ All three IPirateCommands are properly implemented, each producing a new item in
 - [ ] Unsatisfactory
 
 #### Justifaction ##### 
-The Motivate function in PiarateController.cs randomly assigns one of the three different Pirate Worker commands, as specified.
+The Motivate function in PirateController.cs randomly assigns one of the three different Pirate Worker commands, as specified.
 
 ### Stage 4 ###
 
