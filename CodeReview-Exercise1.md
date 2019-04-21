@@ -31,47 +31,47 @@ The break down of each of these labels for the solution assessment.
 
 ### Stage 1 ###
 
-- [ ] Perfect
+- [x] Perfect
 - [ ] Great
 - [ ] Good
 - [ ] Satisfactory
 - [ ] Unsatisfactory
 
 #### Justifaction ##### 
-Write justifaction here.
+The Captain moves right when the appropriate key is pressed, thus successfully meeting the objective.
 
 ### Stage 2 ###
 
-- [ ] Perfect
+- [x] Perfect
 - [ ] Great
 - [ ] Good
 - [ ] Satisfactory
 - [ ] Unsatisfactory
 
 #### Justifaction ##### 
-Write justifaction here.
+All three IPirateCommands are properly implemented, each producing a new item in the specified amount of elapsed time.
 
 ### Stage 3 ###
 
-- [ ] Perfect
+- [x] Perfect
 - [ ] Great
 - [ ] Good
 - [ ] Satisfactory
 - [ ] Unsatisfactory
 
 #### Justifaction ##### 
-Write justifaction here.
+The Motivate function in PiarateController.cs randomly assigns one of the three different Pirate Worker commands, as specified.
 
 ### Stage 4 ###
 
-- [ ] Perfect
+- [x] Perfect
 - [ ] Great
 - [ ] Good
 - [ ] Satisfactory
 - [ ] Unsatisfactory
 
 #### Justifaction ##### 
-Write justifaction here.
+Pressing the Fire2 key produces the expected jump behaviour.  Moreover, attention to detail was shown by only allowing the Captain to jump while grounded. Excellent work! :)
 
 ## Code Style ##
 
